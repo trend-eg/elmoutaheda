@@ -51,6 +51,16 @@ a { color: inherit }
 h1, h2, h3 { font-family: var(--f-display); font-weight: 800; line-height: 1.25; margin: 0; text-wrap: balance }
 .en { font-family: var(--f-latin); letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; color: var(--muted); font-weight: 600 }
 
+
+/* Agency credit bar */
+.credit { display: block; background: #821a2f; color: #fff; text-decoration: none; font-size: .88rem; font-weight: 600 }
+.credit .wrap { display: flex; align-items: center; justify-content: center; gap: 10px; padding-block: 8px; flex-wrap: wrap; text-align: center }
+.credit img { width: 22px; height: auto; display: block }
+.credit .fb { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,.14); border-radius: 999px; padding: 2px 10px 2px 8px; font-size: .78rem; font-weight: 500 }
+.credit .fb svg { width: 14px; height: 14px }
+.credit:hover .fb, .credit:focus-visible .fb { background: #d97706 }
+.credit:focus-visible { outline: 3px solid #d97706; outline-offset: -3px }
+
 /* Header */
 header.top { padding-block: 22px 8px }
 header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap }
@@ -139,6 +149,13 @@ html { scroll-behavior: smooth }
 <body>
 
 
+<a class="credit" href="https://www.facebook.com/trend.agency.eg" target="_blank" rel="noopener">
+  <div class="wrap">
+    <img src="img/trend-logo.png" alt="" width="22" height="22">
+    <span>تنفيذ شركة ترند للتسويق الإلكتروني - <span dir="ltr">Trend Agency</span></span>
+    <span class="fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8Z"/></svg>صفحتنا</span>
+  </div>
+</a>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" id="top">
